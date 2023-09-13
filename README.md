@@ -6,6 +6,10 @@
 
 CamelCase
 
+variable:
+number
+firstName
+
 ha nincs javac akkor:
 control panel -> Path -> edit -> jdk/bin bemásolása
 restart cmd
