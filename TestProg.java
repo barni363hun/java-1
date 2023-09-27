@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -30,14 +31,22 @@ class TestProg {
         BufferedReader kb = new BufferedReader(new InputStreamReader(System.in));
         double size = 0;
         try {
-            String line = kb.readLine();
-            System.out.println(line);
-            size = Double.valueOf(line);
-            System.out.println(size);
-            // BufferedReader fileR = new BufferedReader(new FileReader("data.txt"));
+            // String line = kb.readLine();
+            // System.out.println(line);
+            // size = Double.valueOf(line);
+            // System.out.println(size);
+            BufferedReader fileR = new BufferedReader(new FileReader("data.txt"));
+            String line = null;
+            while ((line = fileR.readLine()) != null) {
+                size = Double.valueOf(line);
+                System.out.println(size);
+            }
         } catch (NumberFormatException e) {
             e.printStackTrace();
             System.out.println("konverzió hiba");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            System.out.println("nincs még file");
         } catch (IOException e) {
             e.printStackTrace();
             System.out.println("rip");
