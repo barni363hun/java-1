@@ -1,3 +1,8 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 class TestProg {
     public static void main(String[] args) {
         // System.out.println("hello world");
@@ -18,10 +23,26 @@ class TestProg {
         // System.out.println("f");
 
         // }
-        TestProg obj = new TestProg();
+        // TestProg obj = new TestProg();
         // obj.doSomething();
-        Square a = new Square(4);
-        System.out.println(a.getLenght());
+        // Square a = new Square(4);
+        // System.out.println(a.getLenght());
+        BufferedReader kb = new BufferedReader(new InputStreamReader(System.in));
+        double size = 0;
+        try {
+            String line = kb.readLine();
+            System.out.println(line);
+            size = Double.valueOf(line);
+            System.out.println(size);
+            // BufferedReader fileR = new BufferedReader(new FileReader("data.txt"));
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+            System.out.println("konverzió hiba");
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("rip");
+        }
+
     }
 
     void doSomething() {

@@ -15,3 +15,5 @@ control panel -> Path -> edit -> jdk/bin bemásolása
 restart cmd
 
 const & final
+
+https://docs.oracle.com/javase/8/docs/api/
