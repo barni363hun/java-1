@@ -3,6 +3,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
 
 class TestProg {
     public static void main(String[] args) {
@@ -35,12 +36,16 @@ class TestProg {
             // System.out.println(line);
             // size = Double.valueOf(line);
             // System.out.println(size);
-            BufferedReader fileR = new BufferedReader(new FileReader("data.txt"));
+            BufferedReader fileR = new BufferedReader(new FileReader("dataIn.txt"));
+            PrintWriter fileW = new PrintWriter("dataOut.txt");
             String line = null;
             while ((line = fileR.readLine()) != null) {
-                size = Double.valueOf(line);
-                System.out.println(size);
+                // size = Double.valueOf(line);
+                // System.out.println(size);
+                fileW.println(line);
             }
+            fileR.close();
+            fileW.close();
         } catch (NumberFormatException e) {
             e.printStackTrace();
             System.out.println("konverzió hiba");
@@ -50,6 +55,8 @@ class TestProg {
         } catch (IOException e) {
             e.printStackTrace();
             System.out.println("rip");
+        } finally {
+            System.out.println("done");
         }
 
     }
