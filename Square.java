@@ -10,7 +10,7 @@ class Square {
     }
 
     public Square(double length, double x, double y) {
-        setLength(length);
+        this(length);
         setXPos(x);
         setYPos(y);
     }
@@ -66,4 +66,5 @@ class Square {
     public void scale(double scaleFactor) {
         setLength(this.length * scaleFactor);
     }
+
 }

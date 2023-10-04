@@ -109,9 +109,19 @@ class TestProg {
         // String line = String.format("x:
         // %.2f",s.getXPos()/*,s.getYPos(),s.getLenght()*/);
         System.out.println("x: " + s.getXPos() + ", y: " + s.getYPos() + ", lenght: " + s.getLength());
-        s.scale(-2);
+        s.scale(2);
         System.out.println("x: " + s.getXPos() + ", y: " + s.getYPos() + ", lenght: " + s.getLength());
+        Square s2 = new Square(1.2, 1.0, 1.0);
+
+        System.out.println("x: " + s2.getXPos() + ", y: " + s2.getYPos() + ", lenght: " + s2.getLength());
         // System.out.println(Square);
+        System.out.println(distance(s.getXPos(), s.getYPos(), s2.getXPos(), s2.getYPos()));
+    }
+
+    double distance(double x1, double y1, double x2, double y2) {
+        double dx = x1 - x2;
+        double dy = y1 - y2;
+        return Math.sqrt((dx * dx) + (dy * dy));
     }
 
 }

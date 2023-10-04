@@ -26,3 +26,5 @@ Lombok rövidít
 
 exception:
 mit akartunk kapni + mit kaptunk
+
+this(adatok) - konstruktort tudunk meghívni
