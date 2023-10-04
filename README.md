@@ -4,7 +4,11 @@
 
 1class = 1 file
 
-CamelCase
+PascalCase - Osztálynevek
+camelCase - Függvények, változók
+CONSTANT_CASE - Konstansok
+
+1TBS indentáció
 
 variable:
 number
@@ -17,3 +21,8 @@ restart cmd
 const & final
 
 https://docs.oracle.com/javase/8/docs/api/
+
+Lombok rövidít
+
+exception:
+mit akartunk kapni + mit kaptunk
