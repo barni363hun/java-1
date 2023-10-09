@@ -28,3 +28,6 @@ exception:
 mit akartunk kapni + mit kaptunk
 
 this(adatok) - konstruktort tudunk meghívni
+
+Függvény az aminek van visszatérési értéke, eljárás az aminek nincs.
+Java-ban mindegyiket metódusnak hívjuk.
