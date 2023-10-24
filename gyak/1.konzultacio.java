@@ -10,7 +10,7 @@ byte, short, int, long, float, double, char (1 byte), boolean
 
 int[] arr = new int[5];
 int[] arr2 = new int[] {1,2,58,3};
-arr.length
+//arr.length használjuk! 
 
 for (int i = 0; i < arr.length; i++) {
 
@@ -56,16 +56,19 @@ class Coord {
         this.y = y;
     }
     Coord(){
-        Coord(0,0);
+        this(0,0);
     }
 }
 
 /*
 A virtuális gép foglal magának memóriát.
+Garbage collector
 
-encapsulation:
-a változók privátok
+láthatóságok:
+package protected = ugyanazon projektben levők elérik egymás adattagjait
+private, protected, public
 
+encapsulation = a változók privátok
 a valóságban az öröklődés nem jellemző inkább interfészezünk
 
 loop-ok:
@@ -89,14 +92,26 @@ finally {
 try catch finally
 a finally mindenképp lefut
 
-static
+static = oszályé
+nem static = objektumé
+statikus függvényt csak statikus függvényből
 
-autónak van motorja = kompozíció = az autó konstruktora fogja megkapni a motrot
+has = kompozíció = autónak van motorja 
+= az autó konstruktora fogja megkapni a motrot
+= nem lehet létrehozni nélküle = uml fekete végű vonal
 
+is = aggregáció = referencia reláció
+= nem szükséges a létezéséhez kompozíció
+= az autó létezhet utasok nélkül is
+= uml fehér végű vonal
 
+knows = kompozíció = származtatás
+= az autó egy jármű
+= uml 3-szög végű vonal
 
 absztrakt osztály = kiindulási osztály
-
+lehet benne tisztán virtuális metódus:
+muszáj implementálni a rendes osztálynak
 */
 
 //abstract class
@@ -108,7 +123,7 @@ abstract class Shape {
 
 class Square extends Shape {
     @Override
-    void draw() {
+    public void draw() {
 
     }
 }
@@ -116,13 +131,13 @@ class Square extends Shape {
 //interface
 
 interface Shape2 {
-    void draw();
+    public void draw();
 }
 
 //implemets = kell neki draw metódus
 class Square2 implements Shape2 {
     @Override
-    void draw() {
+    public void draw() {
 
     }
 }
@@ -133,18 +148,18 @@ de csak 1 absztakt osztályból származhat
 
 static függvény csak statikus dolgokat tud meghívni
 
-*/
+
 
 public static void main(String[] args) {
     //TrainApp(); nem jó
     new TrainApp().start();
 }
 
-public TrainApp(){
-    ...
+public void TrainApp(){
+    //...
 }
 
 
-/*
+
 bufferedreader
 */
