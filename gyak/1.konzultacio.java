@@ -163,3 +163,8 @@ public void TrainApp(){
 
 bufferedreader
 */
+
+
+/*
+ program üzleti logikája = feltételek ellenőrzése és ilyenek
+*/
