@@ -1,7 +1,8 @@
 1. fealadat: Mit kell tudnunk az alapértelmezett (default) konstruktorról? 
 
-Minden osztálynak van, default értékekkel tölti fel az adattagokat (pl.: intnél 0, booleannél false, referenciánál null)
-paraméter nélküli
+Minden osztálynak van, default értékekkel tölti 
+fel az adattagokat (pl.: intnél 0, booleannél false, 
+referenciánál null) paraméter nélküli
 
 2. feladat: Mit jelent a referencia változó a Java nyelvben? Mire használjuk és hogyan? Adj rá egy egyszerű példát!
 

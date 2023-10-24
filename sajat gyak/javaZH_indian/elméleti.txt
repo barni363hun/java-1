@@ -1,0 +1,45 @@
+1.
+    A default konstruktora minden olyan osztálynak van
+    aminek nem definiálunk konstruktort. Paraméter nélküli, 
+    minden adattagot default értékkel hoz létre.
+
+2.
+    Egy pointer.
+    Amikor egy összetett adattípust deklarálunk valójában 
+    referencia változót hozunk létre.
+
+    - 1. példa:
+    Létrehozunk egy tömböt ami a Kocsi osztály példányait tárolja:
+    A tömb referenciákat tárol a kocsikra, nem pedig az értékeiket.
+    - 2. példa:
+    String s = "asd";
+    Létrehoztunk egy s nevezetű referencia változót 
+    ami az "asd" String típusú objektumra mutat
+
+3.
+    byte 8
+    short 16
+    int 32
+    long 64
+    float 32
+    double 64
+    char 16
+    boolean 1
+
+4.
+    A JVM java bytecode-ot futtat. A nyelv platformfüggetlensége
+    ennek köszönhető. A java compiler nem az adott processzorra 
+    fordít, hanem egy java byte kódra, amit aztán a JVM 
+    fordít gépi kódra.
+
+5.
+    kompozíció -> Az autónak van motorja, nélküle nem létezhet
+    asszociáció -> Az autó tulajdonosa, az autó nélkül is létezhet
+    aggregáció -> (Ami nem sorolható egyértelműen az előző 2-be)
+    Az autó rendszámtáblája
+
+6.
+    Az interface megadja, hogy milyen adattagokkal, metódusokkal 
+    kell rendelkeznie az azt megvalósító osztálynak.
+    Ha ez nem áll fent az osztály le sem fordul. 
+    Olyan mint egy absztrakt osztály, önmagában nem példányosítható.

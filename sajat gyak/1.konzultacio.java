@@ -96,18 +96,20 @@ static = oszályé
 nem static = objektumé
 statikus függvényt csak statikus függvényből
 
+https://prog2.cppftw.org/ea09/
+
 has = kompozíció = autónak van motorja 
 = az autó konstruktora fogja megkapni a motrot
 = nem lehet létrehozni nélküle = uml fekete végű vonal
 
 is = aggregáció = referencia reláció
-= nem szükséges a létezéséhez kompozíció
-= az autó létezhet utasok nélkül is
+= nem szükséges a létezéséhez
+= az autó létezhet utasok vagy rendszám nélkül is
 = uml fehér végű vonal
 
-knows = kompozíció = származtatás
-= az autó egy jármű
-= uml 3-szög végű vonal
+knows = asszociáció = ???származtatás???
+= az autó és a tulaja
+= uml nyíl
 
 absztrakt osztály = kiindulási osztály
 lehet benne tisztán virtuális metódus:
@@ -147,8 +149,6 @@ jobb az interface, mert 1 java osztály több interfészt valóra válthat
 de csak 1 absztakt osztályból származhat
 
 static függvény csak statikus dolgokat tud meghívni
-
-
 
 public static void main(String[] args) {
     //TrainApp(); nem jó
