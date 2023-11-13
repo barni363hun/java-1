@@ -31,3 +31,8 @@ this(adatok) - konstruktort tudunk meghívni
 
 Függvény az aminek van visszatérési értéke, eljárás az aminek nincs.
 Java-ban mindegyiket metódusnak hívjuk.
+
+Threading -> 
+deprecated - stop(), suspend(), resume()
+ehelyett: interrupt(),
+
