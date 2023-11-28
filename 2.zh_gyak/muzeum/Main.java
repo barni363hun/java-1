@@ -8,9 +8,16 @@ public class Main
 
 	public static void main(String[] args) {
 		LinkedList<Room> rooms = new LinkedList<Room>();
-		rooms.add(new Room("A",new String[]{"Painting1","Painting2","Painting3"}));
-		rooms.add(new Room("B",new String[]{"Statue1","Statue2","Statue3"}));
-		rooms.add(new Room("A",new String[]{"Photo1","Photo2","Photo3"}));
+		rooms.add(new Room("A",new Item[]{
+			new Item(1,"Painting1","Én festettem"),
+			new Item(2,"Painting2","Nem én festettem"),
+			new Item(3,"Painting3","Nem tudom ki festette"),
+		}));
+		rooms.add(new Room("A",new Item[]{
+			new Item(4,"Statue1","Én festettem"),
+			new Item(5,"Statue2","Nem én festettem"),
+			new Item(6,"Statue3","Nem tudom ki festette"),
+		}));
 
 		System.out.println("Belépés a múzeumba");		
 		for (Room r : rooms) {
