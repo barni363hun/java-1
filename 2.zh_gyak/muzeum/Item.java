@@ -10,4 +10,10 @@ public class Item {
         desc = d;
         room = r;
     }
+    public void printData(){
+        System.out.print(" Item ID: " + id);
+        System.out.print(" Name: " + name);
+        System.out.print(" Description: " + desc);
+        System.out.println(" Room: " + room);
+    }
 }

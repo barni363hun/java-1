@@ -1,0 +1,2 @@
+1,kep,leiras,1
+2,szobor,szleiras,3
